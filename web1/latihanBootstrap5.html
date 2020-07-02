@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-dark text-center" style="height: 100px; background-color: antiquewhite"> <b> Header </b>
+            </div>
+            <nav class="navbar col-12 navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler navbar-toggler-right"
+                    type="button" data-toggle="collapse"
+                    data-target="#navb">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Guest Book</a>
+                            <div class="form-group">
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text"
+                        placeholder="Search..">
+                        <button class="btn btn-success my-2 my-sm-0"
+                        type="button">Search</button>
+                    </form>
+                </div>
+
+            </nav>
+        <div class="col-12 col-md-8 col-lg-10 bg-light text-dark"
+            style="min-height: 650px">
+            <div class="container text-center text-dark"> <h2><b> GUEST BOOK </b></h2>
+                <form action="/action_page.php">
+                    <div class="form-group text-left">
+                        <label for="usr">Name:</label>
+                        <input type="text" class="form-control" id="usr" name="username" style="width: 250px">
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="email">email:</label>
+                        <input type="text" class="form-control" id="email" name="email" style="width: 250px">
+                    </div>
+                    <div class="form-group text-left">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" name="password" style="width: 250px">
+                    </div>
+                    <button type="submit" class="btn btn-info mr-auto">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-2 bg-danger text-light">Banner</div>
+        <div class="col-12 bg-primary text-light">Footer</div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
