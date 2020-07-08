@@ -34,10 +34,11 @@
                     setcookie("total",$total);
         
                 ?>
-                <div><p name="total">Total : <?php  echo "$total <br>";?> </p></div>
+                <!-- <div><p name="total" >Total : <?php  echo "$total <br>";?> </p></div> -->
                 <form action="form_proses2.php" method="POST"> 
-                Uang Bayar: <input type="number" name="bayar" min="0" style="width 300px padding: 4rem!important" onchange="getKembali()" onkeyup="getKembali()" id="bayar" required=""><br>
-                Uang Kembali: <input type="number" name="UangKembali" min="0" style="width 300px padding: 4rem!important" id="UangKembali"><br>
+                Total Harga: <input type="number" name="total" min="0" style="width 300px padding: 4rem!important"  id="total" value="<?=$total;?>" required="" readonly><br>
+                Uang Bayar: <input type="number" name="bayar" min="0" style="width 300px padding: 4rem!important" onchange="getKembali()" onkeyup="getKembali()" id="bayar" required="" placeholder="masukan jumlah uang bayar"><br>
+                Uang Kembali: <input type="number" name="UangKembali" min="0" style="width 300px padding: 4rem!important" onchange="getKembali()" onkeyup="getKembali()" id="kembali" readonly><br>
                     <input type="submit" value="Bayar" class="btn btn-success">
                 </form>
                 
