@@ -11,10 +11,10 @@ $sql = "UPDATE tb_buku SET nama_buku='$namabuku', nama_penerbit='$penerbit', nam
 
 if($conn->query($sql) === TRUE){
     echo "<script>alert('Data berhasil diupdate')</script>";
-    // echo "<script>window.location.assign('formBuku.php')</script>";
+    echo "<script>window.location.assign('formBuku.php')</script>";
 }else{
     echo "<script>alert('Data gagal diupdate.$conn->error')</script>";
-    // echo "<script>window.location.assign('formBuku.php')</script>";
+    echo "<script>window.location.assign('formBuku.php')</script>";
 }
 
 ?>
